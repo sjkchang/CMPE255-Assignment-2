@@ -1,6 +1,6 @@
 # CMPE255-Assignment-2
 
-## AutoML - [JADBio Results](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
+## AutoML - [JADBio Results](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 I used JADBios AutoML functionality to create an ML Model that classifies whether or not a patient has heart disease. This model can use a patient's age, gender, bp, glucose level, troponin level, etc. to predict whether or not they are positive  for heart disease.
 [![JADBio Results](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 
@@ -12,7 +12,7 @@ I utilized the same dataset on heart disease patients for classification that I 
 The best model for this dataset that PyCaret found was a Decision Tree Classifier, which had a 97.83% accuracy.
 This model found that a patient's troponin levels and KCM were the most important features for identifying a patient with heart disease. 
 
-### Multiclass Classification - [Notebook](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_MulticlassClassification.ipynb)
+### Multiclass Classification - 
 I utilized a dataset that magnetic mine detection sensor data. Included in this data is the voltage measured, the height of the sensor, the type of soil, and the type of land mine, if one was found. We will use this dataset to classify the type of mine based on sensor data. The possible categories are 1. None, 2. Anti-Tank, 3. Anti-Personel, 4. Booby Trapped Anti-Personnel and 5. M14 Anti-Personnel
 
 The confusion matrix shows that our model is very good at detecting when there is no mine or when there is an anti-tank mine. The model is also good at detecting whether a mine is anit-personnel, but it gets confused when determining the specific type of anti-personnel mine.       
