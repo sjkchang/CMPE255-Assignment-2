@@ -13,7 +13,9 @@ The best model for this dataset that PyCaret found was a Decision Tree Classifie
 #### Multiclass Classification
 
 #### Regression
+I utilized a dataset on used cars and the price for which they sold. The aim of this data set is to train a model that can predict the sale price of a used car. The dataset included a vast number of car descriptors. Fuel type, aspiration, number of doors, body type, wheelbase, engine size, engine displacement, engine cylinders, and much more could all have an effect on the sale price of a used vehicle. 
 
+PyCaret found that a Huber Regressor was the best model for predicting sales price given this data. It identified horsepower, car length, engine size, and fuel efficiency to be some of the most influential features for predicting a car's sales price. 
 ### Clustering
 
 ### Anomaly Detection
