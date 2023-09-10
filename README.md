@@ -2,6 +2,7 @@
 
 ## AutoML - [JADBio Results](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 I used JADBios AutoML functionality to create an ML Model that classifies whether or not a patient has heart disease. This model can use a patient's age, gender, bp, glucose level, troponin level, etc. to predict whether or not they are positive  for heart disease.
+
 [![JADBio Results](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 
 JADBio found that a Random Forest Classifier was the best-performing model for this dataset. It achieved a 98.5% accuracy. I used this same data set for classification in Pycaret and JADBio achieved better results. The features this model depended on the most were troponin levels, kcm, and age. 
