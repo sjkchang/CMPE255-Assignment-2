@@ -4,16 +4,23 @@
 [![JADBio Results](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 
 ## PyCaret - Low Code Data Mining
-### Classification
-#### Binary Classification
+### Binary Classification
 I utilized the same dataset on heart disease patients for classification that I used in the AutoML section of this assignment. This model aims to predict whether or not someone has heart disease based on their Age, Gender, Blood Pressure, Glucose level, troponin level, etc. 
 
 The best model for this dataset that PyCaret found was a Decision Tree Classifier, which had a 97.83% accuracy.
 This model found that a patient's troponin levels and KCM were the most important features for identifying a patient with heart disease. 
 https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_Classification.ipynb
-#### Multiclass Classification
+### Multiclass Classification
+I utilized a dataset that magnetic mine detection sensor data. Included in this data is the voltage measured, the height of the sensor, type of soil and the type of land mine, if one was found. We will use this dataset to classify the type of mine based on sensor data. The possible categories are 1. None, 2. Anti-Tank, 3. Anti-Personel, 4. Booby Trapped Anti-Personnel and 5. M14 Anti-Personnel
 
-#### Regression
+The confusion matrix shows that our model is very good at detecting when there is no mine or when there is a anti-tank mine. The model is also good at detecting whether a mine is anit-personnel, but it gets confused when determining the specific type of anti-personel mine.       
+
+There were few features, and the feature importance plot shows that all are importaint, however the sensed voltage was the most influencial.
+
+The ROC Curves for XGBClassifier further demonstrates that the model is good at detecting no mine and anti-tank mines. And that it has trouble distingushing between the different types of anti-personnel mines.
+
+https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_MulticlassClassification.ipynb
+### Regression
 I utilized a dataset on used cars and the price for which they sold. The aim of this data set is to train a model that can predict the sale price of a used car. The dataset included a vast number of car descriptors. Fuel type, aspiration, number of doors, body type, wheelbase, engine size, engine displacement, engine cylinders, and much more could all have an effect on the sale price of a used vehicle. 
 
 PyCaret found that a Huber Regressor was the best model for predicting sales price given this data. It identified horsepower, car length, engine size, and fuel efficiency to be some of the most influential features for predicting a car's sales price. 
@@ -43,3 +50,8 @@ dataset = get_rules(dataset, transaction_id = 'InvoiceNo', item_id = 'Descriptio
 ```
 However, when I tried to do the same, I got a module not found error. I tried a few versions of PyCaret and could not find the one where this module existed. 
 ### Time Series Forecasting
+To conduct Time Series Forecasting, I utilized a dataset that included stock price information on Amazons stock starting in 1997 ending in 2020. The goal of this is to predict the closing price of Amazon's stock in the future. 
+
+Pycaret found that the best forecaster for this dataset was a naive forecaster. The prediction only forecasted the stock price for a short while ahead of the final datapoint, so the information is not very useful. 
+
+https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment_2_Time_Series.ipynb
