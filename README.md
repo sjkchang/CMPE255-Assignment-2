@@ -1,8 +1,10 @@
 # CMPE255-Assignment-2
 
-## AutoML - JADBio
+## AutoML - JADBio [Link](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
+I used JADBios AutoML functionality to create an ML Model that classifies whether or not a patient has heart disease. This model can use a patient's age, gender, bp, glucose level, troponin level, etc. to predict whether or not they are positive  for heart disease.
 [![JADBio Results](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/jadbio-results.PNG)](https://app.jadbio.com/share/6013d6c6-5a07-4a15-97ee-1840be6671b2/best/overview)
 
+JADBio found that a Random Forest Classifier was the best-performing model for this dataset. It achieved a 98.5% accuracy. I used this same data set for classification in Pycaret and JADBio achieved better results. The features this model depended on the most were troponin levels, kcm, and age. 
 ## PyCaret - Low Code Data Mining
 ### Binary Classification - [Notebook](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_Classification.ipynb)
 I utilized the same dataset on heart disease patients for classification that I used in the AutoML section of this assignment. This model aims to predict whether or not someone has heart disease based on their Age, Gender, Blood Pressure, Glucose level, troponin level, etc. 
