@@ -11,13 +11,13 @@ The best model for this dataset that PyCaret found was a Decision Tree Classifie
 This model found that a patient's troponin levels and KCM were the most important features for identifying a patient with heart disease. 
 https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_Classification.ipynb
 ### Multiclass Classification
-I utilized a dataset that magnetic mine detection sensor data. Included in this data is the voltage measured, the height of the sensor, type of soil and the type of land mine, if one was found. We will use this dataset to classify the type of mine based on sensor data. The possible categories are 1. None, 2. Anti-Tank, 3. Anti-Personel, 4. Booby Trapped Anti-Personnel and 5. M14 Anti-Personnel
+I utilized a dataset that magnetic mine detection sensor data. Included in this data is the voltage measured, the height of the sensor, the type of soil, and the type of land mine, if one was found. We will use this dataset to classify the type of mine based on sensor data. The possible categories are 1. None, 2. Anti-Tank, 3. Anti-Personel, 4. Booby Trapped Anti-Personnel and 5. M14 Anti-Personnel
 
-The confusion matrix shows that our model is very good at detecting when there is no mine or when there is a anti-tank mine. The model is also good at detecting whether a mine is anit-personnel, but it gets confused when determining the specific type of anti-personel mine.       
+The confusion matrix shows that our model is very good at detecting when there is no mine or when there is an anti-tank mine. The model is also good at detecting whether a mine is anit-personnel, but it gets confused when determining the specific type of anti-personnel mine.       
 
-There were few features, and the feature importance plot shows that all are importaint, however the sensed voltage was the most influencial.
+There were few features, and the feature importance plot shows that all are important, however, the sensed voltage was the most influential.
 
-The ROC Curves for XGBClassifier further demonstrates that the model is good at detecting no mine and anti-tank mines. And that it has trouble distingushing between the different types of anti-personnel mines.
+The ROC Curves for XGBClassifier further demonstrate that the model is good at detecting no mine and anti-tank mines. And that it has trouble distinguishing between the different types of anti-personnel mines.
 
 https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_MulticlassClassification.ipynb
 ### Regression
