@@ -7,13 +7,13 @@ I used JADBios AutoML functionality to create an ML Model that classifies whethe
 
 JADBio found that a Random Forest Classifier was the best-performing model for this dataset. It achieved a 98.5% accuracy. I used this same data set for classification in Pycaret and JADBio achieved better results. The features this model depended on the most were troponin levels, kcm, and age. 
 ## PyCaret - Low Code Data Mining
-### Binary Classification - [Notebook](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_Classification.ipynb)
+### Binary Classification - [Notebook](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_Classification.ipynb) -  [Gradio](https://651a39c3ad4d19c210.gradio.live/)
 I utilized the same dataset on heart disease patients for classification that I used in the AutoML section of this assignment. This model aims to predict whether or not someone has heart disease based on their Age, Gender, Blood Pressure, Glucose level, troponin level, etc. 
 
 The best model for this dataset that PyCaret found was a Decision Tree Classifier, which had a 97.83% accuracy.
 This model found that a patient's troponin levels and KCM were the most important features for identifying a patient with heart disease. 
 
-### Multiclass Classification - 
+### Multiclass Classification - [Notebook](https://github.com/sjkchang/CMPE255-Assignment-2/blob/master/notebooks/Assignment2_MulticlassClassification.ipynb) - [Gradio](https://da44655efb9c1e0c6d.gradio.live/)
 I utilized a dataset that magnetic mine detection sensor data. Included in this data is the voltage measured, the height of the sensor, the type of soil, and the type of land mine, if one was found. We will use this dataset to classify the type of mine based on sensor data. The possible categories are 1. None, 2. Anti-Tank, 3. Anti-Personel, 4. Booby Trapped Anti-Personnel and 5. M14 Anti-Personnel
 
 The confusion matrix shows that our model is very good at detecting when there is no mine or when there is an anti-tank mine. The model is also good at detecting whether a mine is anit-personnel, but it gets confused when determining the specific type of anti-personnel mine.       
